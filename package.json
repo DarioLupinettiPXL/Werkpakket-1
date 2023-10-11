@@ -1,0 +1,14 @@
+{
+  "name": "werkpakket-1",
+  "version": "1.0.0",
+  "description": "Werkpakket 1 van Dario Lupinetti",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

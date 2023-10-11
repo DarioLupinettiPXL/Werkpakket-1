@@ -1,0 +1,129 @@
+body {
+  font-family: "Bahnschrift SemiLight", sans-serif; }
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  display: flex;
+  align-items: center; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  float: left; }
+  .nav img {
+    height: 30px;
+    width: auto;
+    padding-bottom: 10px; }
+  .nav a {
+    float: left;
+    text-align: center;
+    padding: 26px 16px 0px 26px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #888;
+    transition: transform 0.3s, color 0.3s, font-size 0.3s; }
+    .nav a:hover {
+      color: #ae00bf;
+      font-size: 20px;
+      transform: scale(1.1) rotate(5deg); }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .footer-left, footer .footer-right {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px; }
+  footer .footer-right {
+    text-align: right; }
+  footer p {
+    font-size: 16px;
+    color: #fff; }
+  footer h3 {
+    font-size: 24px;
+    color: black; }
+  footer .social-icons {
+    text-align: center;
+    margin: 30px; }
+    footer .social-icons a {
+      display: block;
+      margin: 5px;
+      transition: transform 0.3s, filter 0.3s; }
+    footer .social-icons a:hover {
+      transform: scale(1.2);
+      filter: brightness(1.5); }
+    footer .social-icons img {
+      width: 50px;
+      height: 50px; }
+
+.banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+
+.login-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Bahnschrift SemiLight", sans-serif;
+  font-size: 17px; }
+  .login-page h2 {
+    font-size: 24px;
+    text-align: center; }
+  .login-page form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #333; }
+  .login-page form input[type="text"],
+  .login-page form input[type="email"],
+  .login-page form input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 5px 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #333; }
+  .login-page form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+    .login-page form input[type="submit"]:hover {
+      background-color: #4d4d4d; }
+  .login-page form p {
+    margin-top: 10px;
+    text-align: center; }
+    .login-page form p a {
+      color: #ae00bf;
+      text-decoration: none; }
+      .login-page form p a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=main.css.map */
