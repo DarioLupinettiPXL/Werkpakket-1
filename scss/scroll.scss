@@ -1,0 +1,18 @@
+@import "kleuren";
+@import "mixin";
+
+.scroll-button {
+  @include text-styles($font-size, #fff);
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: $background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 100%);
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modellen</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script src="../js/filter.js"></script>
+    <script src="../js/paginatie.js"></script>
+
+</head>
+<body class="overzichtspagina">
+<header>
+    <nav>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="overzichtspagina.html">Overzicht</a>
+            <a href="loginpagina.html">Login</a>
+            <a href="index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+    </nav>
+</header>
+<button onclick="topFunction()" id="terug">^</button>
+<main>
+    <h1 class="page-title">Modellen</h1>
+    <p class="introduction-text">
+        Welkom bij SuperCar's By Dario! Stap binnen in de opwindende wereld van luxe en snelheid. Bij SuperCar's By
+        Dario bieden we een exclusieve collectie van 's werelds meest indrukwekkende supercars. Onze passie voor
+        snelheid, elegantie en prestaties komt tot leven in elke auto die we aanbieden.
+    </p>
+    <div class="filter-toggle" id="filterToggle">
+        <div class="filter-button" id="openFilterButton">Filter openen</div>
+    </div>
+    <div class="filters" id="filters">
+        <h2>Filters</h2>
+        <div class="filter-option">
+            <label for="filterProperty1">Merk</label>
+            <select id="filterProperty1" name="filterProperty1">
+                <option value="optionA">Bugatti</option>
+                <option value="optionB">BMW</option>
+                <option value="optionC">Ferrari</option>
+                <option value="optionD">Koenigsegg</option>
+                <option value="optionE">Lamborghini</option>
+                <option value="optionF">Pagani</option>
+            </select>
+        </div>
+        <div class="filter-option">
+            <label for="filterPrice">Prijs tot:</label>
+            <input type="range" id="filterPrice" name="filterPrice" min="25000" max="500000" step="25000" value="25000">
+            <span id="selectedPrice">$25,000</span>
+        </div>
+        <div class="filter-option allestonen">
+            <button id="showAllButton">Alle auto's tonen</button>
+        </div>
+    </div>
+
+    <div class="paginatie">
+        <ul>
+            <li class="page" id="page1">1</li>
+            <li class="page" id="page2">2</li>
+            <li class="page" id="page3">3</li>
+        </ul>
+    </div>
+
+    <h1 class="cards-title">Producten</h1>
+    <div class="product-cards">
+        <div class="product-card">
+            <a href="product1.html"><img src="../assets/product1.jpg" alt="Product 1"></a>
+            <h2>Bugatti Chiron</h2>
+            <p>De Bugatti Chiron is een meesterwerk van techniek en design, dat de essentie van luxe en snelheid
+                belichaamt. Met zijn overweldigende prestaties en onberispelijke stijl is de Chiron een supercar met
+                gemak.</p>
+            <p class="price">€2,500,000</p>
+        </div>
+        <div class="product-card">
+            <a href="product2.html"><img src="../assets/product2.jpg" alt="Product 2"></a>
+            <h2>BMW i8</h2>
+            <p>De BMW i8 is een opvallende en innovatieve plug-in hybride sportwagen. Deze auto combineert
+                high-performance met geavanceerde technologie en milieubewustzijn. Met een futuristisch ontwerp dat doet
+                denken aan een ruimteschip, biedt de BMW i8 opwindende acceleratie dankzij zijn hybride aandrijflijn,
+                bestaande uit een benzinemotor en elektrische motor.</p>
+            <p class="price">€150,000</p>
+        </div>
+        <div class="product-card">
+            <a href="product3.html"><img src="../assets/product3.jpg" alt="Product 3"></a>
+            <h2>Koenigsegg Gemera</h2>
+            <p>De Koenigsegg Gemera is een revolutionaire hypercar die innovatie en prestaties naar een geheel nieuw
+                niveau tilt. Deze vierzitter hypercar is een meesterwerk van Zweedse technische uitmuntendheid en
+                combineert razendsnelle prestaties met luxueus comfort.</p>
+            <p class="price">€1,800,000</p>
+        </div>
+        <div class="product-card">
+            <a href="product4.html"><img src="../assets/product4.jpg" alt="Product 4"></a>
+            <h2>Pagani Huayra</h2>
+            <p>De Pagani Huayra is een verbluffende hypercar die synoniem staat voor Italiaanse passie en precisie. Met
+                een buitengewoon ontwerp en een ongeëvenaarde aandacht voor detail heeft de Huayra zich gevestigd als
+                een icoon in de wereld van high-performance auto's.</p>
+            <p class=price">€2,300,000</p>
+        </div>
+        <div class="product-card">
+            <a href="product5.html"><img src="../assets/product5.jpg" alt="Product 5"></a>
+            <h2>Lamborghini Aventador</h2>
+            <p>De Lamborghini Aventador is een ware legende in de wereld van high-performance sportwagens. Deze
+                adembenemende bolide combineert het erfgoed van het beroemde Italiaanse automerk Lamborghini met de
+                allernieuwste technologie en ontwerpelementen.</p>
+            <p class="price">€400,000</p>
+        </div>
+        <div class="product-card">
+            <a href="product6.html"><img src="../assets/product6.jpg" alt="Product 6"></a>
+            <h2>De Ferrari LaFerrari</h2>
+            <p>De Ferrari LaFerrari is een van de meest indrukwekkende en zeldzame hypercars die ooit zijn gebouwd. Deze
+                bolide belichaamt de ultieme technologische en prestatiegerichte prestaties van Ferrari.</p>
+            <p class="price">€3,000,000</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-left">
+        <p>De CO₂-emissie en verbruikswaarden worden alleen ter indicatieve titel gegeven. Het is mogelijk dat de
+            waarden die zijn opgegeven voor een specifieke configuratie van een voertuig verschillen van de waarden die
+            worden weergegeven op het gelijkvormigheidsattest bij aflevering van het voertuig. Bovendien kan dit
+            eventuele verschil de krachtens de toepasselijke wetgeving (sociaal, fiscaal, enz.) verschuldigde bedragen
+            mogelijks beïnvloeden. Contacteer uw verdeler voor alle informatie over de fiscaliteit van uw voertuig.
+            (GEKOPIEERD VAN https://www.nl.audi.be/be/web/nl.html)</p>
+    </div>
+    <div class="footer-right">
+        <h3>Contactgegevens</h3>
+        <p>SuperCar's By Dario</p>
+        <p>Adres: Elfde-Liniestraat 112</p>
+        <p>GSM: (+32) 456 78 90 47</p>
+        <p>Email: dariolupinetti@hotmail.com</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/Lamborghini/?locale=nl_NL" target="_blank"><img
+                src="../assets/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com/lamborghini?lang=nl" target="_blank"><img src="../assets/twitter-icon.png"
+                                                                               alt="Twitter"></a>
+        <a href="https://www.instagram.com/lamborghini/" target="_blank"><img src="../assets/instagram-icon.png"
+                                                                              alt="Instagram"></a>
+    </div>
+</footer>
+<script src="../js/terugnaartop.js"></script>
+</body>
+</html>
