@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     filterPrice.addEventListener("input", function() {
         const value = filterPrice.value;
-        selectedPrice.textContent = `$${value}`;
+        selectedPrice.textContent = `€${value}`;
     });
 });
